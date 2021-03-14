@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./animate.min.css">
+    <link rel="stylesheet" href="./app.css">
+
+  </head>
+  <body>
+  
+    <main class="container-fluid">
+   
+      <div class="row">
+        
+        <div class="col-md-6 p-4 my-auto">
+          <form class="card card-body" id="productForm" action="">
+            <div class="form-group">
+              <input
+                type="text"
+                id="codProducto"
+                placeholder="Código de Producto"
+                class="form-control"
+                autofocus
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                placeholder="Nombre de Producto"
+                class="form-control"
+                autofocus
+              />
+            </div>
+         
+            <div class="form-group">
+                <input
+                  type="number"
+                  id="price"
+                  step="any"
+                  placeholder="Precio de producto"
+                  class="form-control"
+                  autofocus
+                />
+              </div>
+              <div class="form-group">
+                <textarea  id="description"  rows="3" placeholder="Descripcion del producto" class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">Cargar Imagen</label>
+                <input type="file" class="form-control-file" id="fileSrc" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted">Favor no ingresar una imagen muy pesada poner imager en la carpeta img</small>
+              </div>
+              <button class="btn btn-warning">
+                Guardar
+              </button>
+          </form>
+        </div>
+        <div class="col-md-6  bg-secondary">
+          <div id="products">
+
+          </div>
+        </div>
+      </div>
+      
+    </main>
+ 
+    <script src="./app.js"></script>
+    
+  </body>
+</html>
